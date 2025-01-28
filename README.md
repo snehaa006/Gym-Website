@@ -1,1 +1,3 @@
 # Gym-Website
+Cross Fitness is a responsive gym website built using HTML and CSS.
+The Cross Fitness website is designed to inspire individuals to achieve their fitness goals. It features a sleek, modern layout with intuitive navigation. Users can explore a variety of services like personal training, group classes, and nutrition plans, or learn more about the gym’s story, team, and mission through the detailed “ABOUT” section. The “JOIN NOW” feature encourages visitors to take the first step toward a healthier lifestyle, while the clean design, vibrant background, and user-friendly forms ensure a seamless experience. Whether you’re a beginner or a fitness enthusiast, Cross Fitness is your partner in progress.
