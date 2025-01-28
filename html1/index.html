@@ -2,21 +2,30 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page that appears in the browser tab -->
     <title>Cross Fitness</title>
+    
+    <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Link to Google Fonts for applying the Ubuntu font across the page -->
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Internal CSS for styling -->
     <style>
+        /* Universal styles for font across all elements */
         * {
             font-family: "Ubuntu", serif;
         }
 
+        /* Body styling with background image and white text */
         body {
             color: white;
             margin: 0px;
@@ -26,24 +35,20 @@
             background-size: cover;
         }
 
+        /* Header layout using flexbox for logo, navbar, and buttons */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* border: 2px solid white; */
         }
 
-        /* .item{
-            width:auto;
-        } */
-        /* #logo{
-            
-        } */
+        /* Logo image styling: controls width and color inversion */
         #logo img {
             width: 156px;
             filter: invert(100%);
         }
 
+        /* Logo text styling: centering and spacing */
         #logo div {
             text-align: center;
             font-size: 30px;
@@ -51,31 +56,33 @@
             margin-top: 2px;
         }
 
-        /* #navbar{
-            border: 2px solid red;
-        } */
+        /* Navbar container styling to align links horizontally */
         .navlinks {
             display: flex;
             margin-left: 361px;
         }
 
+        /* Styling for individual navigation items */
         .navlinks li {
             list-style: none;
             font-size: 29px;
         }
 
+        /* Styling for links inside navbar */
         .navlinks li a {
             color: white;
             text-decoration: none;
             padding: 34px 32px;
         }
 
+        /* Hover and active states for navigation links */
         .navlinks li a:hover,
         .navlinks li a.active {
             text-decoration: underline;
             color: rgb(170, 158, 158);
         }
 
+        /* Button styling: margin, font color, and hover effect */
         .btn {
             margin-top: 6px;
             margin-right: 25px;
@@ -88,10 +95,12 @@
             cursor: pointer;
         }
 
+        /* Button hover effect: background color change */
         .btn:hover {
             background-color: rgb(159, 159, 159);
         }
 
+        /* Main content container styling */
         .container {
             margin: 80px;
             padding: 90px 90px;
@@ -103,21 +112,23 @@
             flex-flow: column wrap;
         }
 
+        /* Form layout: centered with column flow */
         form {
             display: flex;
             flex-flow: column wrap;
             width: 55%;
             justify-content: center;
             align-items: center;
-            /* border: 2px solid yellow; */
         }
 
+        /* Form group styling: centered input fields */
         .form-group {
             margin: 14px;
             padding: 5px 6px;
             text-align: center;
         }
 
+        /* Input field styling: size, padding, and border */
         .form-group input {
             padding: 5px 6px;
             text-align: center;
@@ -131,6 +142,7 @@
             background-color: whitesmoke;
         }
 
+        /* Heading styling: large font size with shadow effect */
         .container h1 {
             text-shadow: 2px 2px lightslategrey;
             margin-bottom: 90px;
@@ -140,6 +152,7 @@
             font-family: none;
         }
 
+        /* Submit button styling: large, centered, and bold */
         .form-group button[type="submit"] {
             text-align: center;
             color: white;
@@ -147,12 +160,11 @@
             padding: 30px 117px;
             border: 2px solid grey;
             border-radius: 20px;
-            background-color: white;
             background-color: black;
             height: 83px;
-
         }
 
+        /* Footer container styling */
         footer {
             display: flex;
             background-color: rgb(21, 86, 139);
@@ -161,25 +173,30 @@
             flex-flow: column wrap;
         }
 
+        /* Footer content styling */
         footer div {
             width: 500px;
             margin: 25px auto;
         }
 
+        /* Social media links container */
         div.socials {
             height: 60px;
         }
 
+        /* Info section in the footer */
         div.INFO {
             height: 140px;
         }
 
+        /* Footer text and link styling */
         footer div a,
         footer div p {
             font-size: 24px;
             text-decoration: none;
         }
 
+        /* Styling for footer links on hover */
         footer div a {
             padding: 5px;
         }
