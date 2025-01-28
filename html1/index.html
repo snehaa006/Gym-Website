@@ -5,19 +5,19 @@
     <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Title of the page that appears in the browser tab -->
     <title>Cross Fitness</title>
-    
+
     <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Link to Google Fonts for applying the Ubuntu font across the page -->
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    
+
     <!-- Internal CSS for styling -->
     <style>
         /* Universal styles for font across all elements */
@@ -80,6 +80,40 @@
         .navlinks li a.active {
             text-decoration: underline;
             color: rgb(170, 158, 158);
+        }
+
+        /* Adding Dropdown-content for plans */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            border-radius: 10px;
+            display: none;
+            position: absolute;
+            background-color: grey;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 17px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: cornsilk;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #Contactnav a {
+            padding: 24px 24px;
         }
 
         /* Button styling: margin, font color, and hover effect */
@@ -221,10 +255,37 @@
             <nav>
                 <ul class="navlinks">
                     <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PLANS</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li class="dropdown">
+                        <a href="#">ABOUT</a>
+                        <div class="dropdown-content">
+                            <a href="#">Our Story</a>
+                            <a href="#">Our Mission</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">SERVICES</a>
+                        <div class="dropdown-content">
+                            <a href="#">Personal training</a>
+                            <a href="#">Group classes</a>
+                            <a href="#">Gym Equipment</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">PLANS</a>
+                        <div class="dropdown-content">
+                            <a href="#">Basic Plan</a>
+                            <a href="#">Premium Plan</a>
+                            <a href="#">VIP plan</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">CONTACT US</a>
+                        <div class="dropdown-content" id="Contactnav">
+                            <a href="#">Phone Number</a>
+                            <a href="#">Email</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
